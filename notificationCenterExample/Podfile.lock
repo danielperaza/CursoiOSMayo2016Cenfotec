@@ -1,0 +1,15 @@
+PODS:
+  - BIZPopupView (1.0.0):
+    - TPKeyboardAvoiding
+  - TPKeyboardAvoiding (1.3)
+
+DEPENDENCIES:
+  - BIZPopupView
+
+SPEC CHECKSUMS:
+  BIZPopupView: 2f16ecbc852baa16e1ef20b67abaa831909ec994
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+
+PODFILE CHECKSUM: 3b95f2f9539b397f72f4d3d07ff32c68be9eb6da
+
+COCOAPODS: 1.0.0

@@ -10,7 +10,7 @@
 #import "EnterNameViewController.h"
 #import "BIZPopupViewController.h"
 
-@interface WellcomeViewController ()<EnterNameDelegate>
+@interface WellcomeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *yourNameLabel;
 @property (nonatomic, strong) BIZPopupViewController *popover;
 @property (nonatomic, strong)  EnterNameViewController *enterNameViewController;
@@ -26,7 +26,6 @@
 -(void)initializeEnterViewController{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.enterNameViewController = [storyboard instantiateViewControllerWithIdentifier:@"EnterNameViewController"];
-    self.enterNameViewController.delegate = self;
 }
 
 -(void)presentPopover{

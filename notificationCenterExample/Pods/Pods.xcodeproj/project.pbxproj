@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0276EA986018C0E308BEA6E284B1B798 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5F683F27D4D414E1AEF5CE556393ED /* QuartzCore.framework */; };
+		0E5654797F6A039A4E699683BFFD034D /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0C96FFFA5A08F5D1D454E351EB97ED /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DF20A535C26657D6401763C0D4D0D9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB5650075A773663C3494D605C5FD83 /* Foundation.framework */; };
+		2182FD0C20B7F3BF72C55EDFF8283F92 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C8465791720483B58ED1739D01ED55 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDB8EF665C3500FA1797F659355D54F /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BBFCE6557DB61ED525EFCEB13D809A2 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6F43EA0B4616BC6AF58A77CC1B4D42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB5650075A773663C3494D605C5FD83 /* Foundation.framework */; };
+		56FF5A041DFB2CCE8A8071CF8653D1F7 /* Pods-popoverExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1CF414974BD062BB6AF5898F960AC6 /* Pods-popoverExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC033CDB87D8A68A8CA64CF2C5F936B /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0518DB8E1BBB7D6A0F2D3CB6263BE /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		70400EAC30ED5310BF00178EF1817959 /* TPKeyboardAvoiding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C21FD3D2BD3CBA4524404DA26A58FAB /* TPKeyboardAvoiding.framework */; };
+		7BB85E5C6A7620DC7356B6B43EA6D821 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F5812BA50B91CAFE7E614597DA4C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84D2E762AC6AA20EB5DF5AEF0E7A44B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB5650075A773663C3494D605C5FD83 /* Foundation.framework */; };
+		9997246FDD27CBF47A8A57C0DB278BF1 /* BIZPopupViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BE5DA4A4D0060F524FB2C26C4B6FA5 /* BIZPopupViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A046E3AECF876F0ABFFDA34B73D781CC /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD34A2D0125456F2CBA006843E6CABF /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F77643A394174D1D994F066FFB02D0 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C69DD855CF3D8645177F41C3DDEA48 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE39A3204328FB3B88165686DED0B11 /* BIZPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBEC3C904693A408298A88CF50442B0 /* BIZPopupView-dummy.m */; };
+		B4C0B2E6986B1D5D53E85DF5BB114577 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB6C49CF132871F2E3EC7A454A828A /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C395B797895075CCF4F8BF19A3D7CF69 /* BIZPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4664D2658CB810A632D2FE628FF80C3D /* BIZPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3EECEFA94D5A27A79F4121388107978 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663B12B5D69BB6290C8CAEE87CCEFF0A /* TPKeyboardAvoiding-dummy.m */; };
+		C6DDF7A72B0CFA66FBE08FA1FC6AB317 /* Pods-popoverExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA84E19893D8B5B873EC8832F58A5EE /* Pods-popoverExample-dummy.m */; };
+		C79FF4C678589EDFC2DE17B1ADEF109B /* BIZPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72B3DAED7A39B1B670FF47973D094AA /* BIZPopupViewController.m */; };
+		D80C4E5BC7D8D2663D3212234CCE449A /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 559D6855449618001F5FB1FD31E19625 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D91F7A9C32BAE5E2BC29FFB060F896AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9A0023F72BBA0EDC6E24DC207908B0 /* UIKit.framework */; };
+		DE35D058D80DC6587F044007B91A41BD /* k-popup-dismiss-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C899E08719A94F9CB91503FA7DEFB7 /* k-popup-dismiss-button@3x.png */; };
+		EA5E368D84DC3D6979F88B9FE2398968 /* UIViewController+BIZChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF0B9323D4BB22E9F6281225BC6538F /* UIViewController+BIZChildViewController.m */; };
+		EFA446768EABB8929E39EC8D78D8AF29 /* k-popup-dismiss-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F3B55E560EF28C3F4ABEAD15D79B74 /* k-popup-dismiss-button@2x.png */; };
+		EFE019F24BEE09EF45124F100794A5B1 /* BIZPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 205042756981A317E08F87484F18387E /* BIZPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D5ECA0FF9B0016A0235E86FF35F1D0 /* UIViewController+BIZChildViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D7B72C266F638C195384724A7EC8D4 /* UIViewController+BIZChildViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20BE14B3F71865848E05E1427F1E8BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734062D58D9D92E4055C27D4AF7456A9;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		9D323A715FA5503C04564541F348DE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734062D58D9D92E4055C27D4AF7456A9;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		DB6A760C0956821DE4F7BCFF54355762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF835CCCA4C35BB313FE062403AFE6C3;
+			remoteInfo = BIZPopupView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0924B63FFDD6F7D3B8510212243098AD /* BIZPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BIZPopupView.modulemap; sourceTree = "<group>"; };
+		0C21FD3D2BD3CBA4524404DA26A58FAB /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA84E19893D8B5B873EC8832F58A5EE /* Pods-popoverExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-popoverExample-dummy.m"; sourceTree = "<group>"; };
+		18C899E08719A94F9CB91503FA7DEFB7 /* k-popup-dismiss-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "k-popup-dismiss-button@3x.png"; path = "Resources/k-popup-dismiss-button@3x.png"; sourceTree = "<group>"; };
+		1AB5650075A773663C3494D605C5FD83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		205042756981A317E08F87484F18387E /* BIZPopupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BIZPopupViewController.h; path = Classes/BIZPopupViewController.h; sourceTree = "<group>"; };
+		2323590C740BC9222569BFF824437BAF /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		2D8DEA3CA0B7E87BE5EB312596F1363A /* Pods-popoverExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-popoverExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		3825F5812BA50B91CAFE7E614597DA4C /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		4664D2658CB810A632D2FE628FF80C3D /* BIZPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BIZPopupView-umbrella.h"; sourceTree = "<group>"; };
+		559D6855449618001F5FB1FD31E19625 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		573EB64C070875B18A768215031D05AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D006D1A0332E7053522B3B58B76144E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AA9864AD9D880E521C104BD21EBD4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C8465791720483B58ED1739D01ED55 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		663B12B5D69BB6290C8CAEE87CCEFF0A /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		6AD0518DB8E1BBB7D6A0F2D3CB6263BE /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		6BDE8E3A90F72E4F7CF0356FC98A2549 /* Pods_popoverExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popoverExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7132D350EAF6D21099878523C8C34C91 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C69DD855CF3D8645177F41C3DDEA48 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		7952C98027D8CFAD81E79E02B3399809 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		7FCF2ACAA4684BFCB9DF950B29B4FB0A /* BIZPopupView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BIZPopupView.xcconfig; sourceTree = "<group>"; };
+		80BE5DA4A4D0060F524FB2C26C4B6FA5 /* BIZPopupViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BIZPopupViewControllerDelegate.h; path = Classes/BIZPopupViewControllerDelegate.h; sourceTree = "<group>"; };
+		8A5F683F27D4D414E1AEF5CE556393ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		920EDAD28060AE9075FCDD79255EF42C /* Pods-popoverExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-popoverExample.modulemap"; sourceTree = "<group>"; };
+		92BA04AC68EC425ED2BA3ADC7AB65E06 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F3B55E560EF28C3F4ABEAD15D79B74 /* k-popup-dismiss-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "k-popup-dismiss-button@2x.png"; path = "Resources/k-popup-dismiss-button@2x.png"; sourceTree = "<group>"; };
+		971CA4995BD1663302BB71020301A960 /* BIZPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BIZPopupView-prefix.pch"; sourceTree = "<group>"; };
+		981BC1FC5CFCF34B381E6BC9DFEDAFDF /* Pods-popoverExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-popoverExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A9A0023F72BBA0EDC6E24DC207908B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9BBFCE6557DB61ED525EFCEB13D809A2 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		C42B3C5A327BC88AD07D0DCC91151144 /* Pods-popoverExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popoverExample-resources.sh"; sourceTree = "<group>"; };
+		C72B3DAED7A39B1B670FF47973D094AA /* BIZPopupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BIZPopupViewController.m; path = Classes/BIZPopupViewController.m; sourceTree = "<group>"; };
+		CC0C96FFFA5A08F5D1D454E351EB97ED /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		CF1CF414974BD062BB6AF5898F960AC6 /* Pods-popoverExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-popoverExample-umbrella.h"; sourceTree = "<group>"; };
+		D5D7B72C266F638C195384724A7EC8D4 /* UIViewController+BIZChildViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BIZChildViewController.h"; path = "Classes/UIViewController+BIZChildViewController.h"; sourceTree = "<group>"; };
+		DABA0764294ED4EAA7B28C3E413D499D /* Pods-popoverExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popoverExample-frameworks.sh"; sourceTree = "<group>"; };
+		DFBB6C49CF132871F2E3EC7A454A828A /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		EBD34A2D0125456F2CBA006843E6CABF /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		ECF0B9323D4BB22E9F6281225BC6538F /* UIViewController+BIZChildViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BIZChildViewController.m"; path = "Classes/UIViewController+BIZChildViewController.m"; sourceTree = "<group>"; };
+		EDBEC3C904693A408298A88CF50442B0 /* BIZPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BIZPopupView-dummy.m"; sourceTree = "<group>"; };
+		F480E685366AB50DFF829574A234648B /* Pods-popoverExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popoverExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FC27D255BC71615D97CF856B9060D805 /* Pods-popoverExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popoverExample.release.xcconfig"; sourceTree = "<group>"; };
+		FCF7161AD3535DB8410D328CC60DD78C /* BIZPopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIZPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		111CB36E769B6D4027D7E8B5738A81C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6F43EA0B4616BC6AF58A77CC1B4D42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E4110CDD1C122CCCD0F0C40F0A0554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D2E762AC6AA20EB5DF5AEF0E7A44B5 /* Foundation.framework in Frameworks */,
+				0276EA986018C0E308BEA6E284B1B798 /* QuartzCore.framework in Frameworks */,
+				70400EAC30ED5310BF00178EF1817959 /* TPKeyboardAvoiding.framework in Frameworks */,
+				D91F7A9C32BAE5E2BC29FFB060F896AE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B3175F92F105E2D934704C396BDCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF20A535C26657D6401763C0D4D0D9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171C75F345E3405527831C3386711611 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				77C69DD855CF3D8645177F41C3DDEA48 /* TPKeyboardAvoidingCollectionView.h */,
+				6AD0518DB8E1BBB7D6A0F2D3CB6263BE /* TPKeyboardAvoidingCollectionView.m */,
+				9BBFCE6557DB61ED525EFCEB13D809A2 /* TPKeyboardAvoidingScrollView.h */,
+				CC0C96FFFA5A08F5D1D454E351EB97ED /* TPKeyboardAvoidingScrollView.m */,
+				63C8465791720483B58ED1739D01ED55 /* TPKeyboardAvoidingTableView.h */,
+				DFBB6C49CF132871F2E3EC7A454A828A /* TPKeyboardAvoidingTableView.m */,
+				559D6855449618001F5FB1FD31E19625 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				3825F5812BA50B91CAFE7E614597DA4C /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				CBB7B3972AC87B40A108373B398C40B7 /* Support Files */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		3B329AB7710E8694E879C81B8DBB26A2 /* Pods-popoverExample */ = {
+			isa = PBXGroup;
+			children = (
+				62AA9864AD9D880E521C104BD21EBD4B /* Info.plist */,
+				920EDAD28060AE9075FCDD79255EF42C /* Pods-popoverExample.modulemap */,
+				981BC1FC5CFCF34B381E6BC9DFEDAFDF /* Pods-popoverExample-acknowledgements.markdown */,
+				2D8DEA3CA0B7E87BE5EB312596F1363A /* Pods-popoverExample-acknowledgements.plist */,
+				0FA84E19893D8B5B873EC8832F58A5EE /* Pods-popoverExample-dummy.m */,
+				DABA0764294ED4EAA7B28C3E413D499D /* Pods-popoverExample-frameworks.sh */,
+				C42B3C5A327BC88AD07D0DCC91151144 /* Pods-popoverExample-resources.sh */,
+				CF1CF414974BD062BB6AF5898F960AC6 /* Pods-popoverExample-umbrella.h */,
+				F480E685366AB50DFF829574A234648B /* Pods-popoverExample.debug.xcconfig */,
+				FC27D255BC71615D97CF856B9060D805 /* Pods-popoverExample.release.xcconfig */,
+			);
+			name = "Pods-popoverExample";
+			path = "Target Support Files/Pods-popoverExample";
+			sourceTree = "<group>";
+		};
+		5012B7393101BAE2C1FCBDB8BA44B959 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7161AD3535DB8410D328CC60DD78C /* BIZPopupView.framework */,
+				6BDE8E3A90F72E4F7CF0356FC98A2549 /* Pods_popoverExample.framework */,
+				7132D350EAF6D21099878523C8C34C91 /* TPKeyboardAvoiding.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5266CAA1E7E9805C926EA2CD3D9DD2B0 /* BIZPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				205042756981A317E08F87484F18387E /* BIZPopupViewController.h */,
+				C72B3DAED7A39B1B670FF47973D094AA /* BIZPopupViewController.m */,
+				80BE5DA4A4D0060F524FB2C26C4B6FA5 /* BIZPopupViewControllerDelegate.h */,
+				D5D7B72C266F638C195384724A7EC8D4 /* UIViewController+BIZChildViewController.h */,
+				ECF0B9323D4BB22E9F6281225BC6538F /* UIViewController+BIZChildViewController.m */,
+				F23E534E75B6CE3EAB9C02C8610A68C9 /* Resources */,
+				E6F97BE8E7068BE323713E4F8EB2D5E5 /* Support Files */,
+			);
+			path = BIZPopupView;
+			sourceTree = "<group>";
+		};
+		6E153ABCC81102B1380DB061A10F4402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C21FD3D2BD3CBA4524404DA26A58FAB /* TPKeyboardAvoiding.framework */,
+				D20C96D11729EF9967B9EF5670C5C9D6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6E153ABCC81102B1380DB061A10F4402 /* Frameworks */,
+				9602465945A26AF2A9EC242D5AEB5CE8 /* Pods */,
+				5012B7393101BAE2C1FCBDB8BA44B959 /* Products */,
+				DC83337D24BF7329CCC4876C6A87024E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9602465945A26AF2A9EC242D5AEB5CE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5266CAA1E7E9805C926EA2CD3D9DD2B0 /* BIZPopupView */,
+				171C75F345E3405527831C3386711611 /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBB7B3972AC87B40A108373B398C40B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D006D1A0332E7053522B3B58B76144E /* Info.plist */,
+				7952C98027D8CFAD81E79E02B3399809 /* TPKeyboardAvoiding.modulemap */,
+				2323590C740BC9222569BFF824437BAF /* TPKeyboardAvoiding.xcconfig */,
+				663B12B5D69BB6290C8CAEE87CCEFF0A /* TPKeyboardAvoiding-dummy.m */,
+				92BA04AC68EC425ED2BA3ADC7AB65E06 /* TPKeyboardAvoiding-prefix.pch */,
+				EBD34A2D0125456F2CBA006843E6CABF /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		D20C96D11729EF9967B9EF5670C5C9D6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AB5650075A773663C3494D605C5FD83 /* Foundation.framework */,
+				8A5F683F27D4D414E1AEF5CE556393ED /* QuartzCore.framework */,
+				9A9A0023F72BBA0EDC6E24DC207908B0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC83337D24BF7329CCC4876C6A87024E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B329AB7710E8694E879C81B8DBB26A2 /* Pods-popoverExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6F97BE8E7068BE323713E4F8EB2D5E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0924B63FFDD6F7D3B8510212243098AD /* BIZPopupView.modulemap */,
+				7FCF2ACAA4684BFCB9DF950B29B4FB0A /* BIZPopupView.xcconfig */,
+				EDBEC3C904693A408298A88CF50442B0 /* BIZPopupView-dummy.m */,
+				971CA4995BD1663302BB71020301A960 /* BIZPopupView-prefix.pch */,
+				4664D2658CB810A632D2FE628FF80C3D /* BIZPopupView-umbrella.h */,
+				573EB64C070875B18A768215031D05AB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BIZPopupView";
+			sourceTree = "<group>";
+		};
+		F23E534E75B6CE3EAB9C02C8610A68C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95F3B55E560EF28C3F4ABEAD15D79B74 /* k-popup-dismiss-button@2x.png */,
+				18C899E08719A94F9CB91503FA7DEFB7 /* k-popup-dismiss-button@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8B8BA7B91B4AE2C8D8FB079602ADF8D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A046E3AECF876F0ABFFDA34B73D781CC /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				A8F77643A394174D1D994F066FFB02D0 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				2BDB8EF665C3500FA1797F659355D54F /* TPKeyboardAvoidingScrollView.h in Headers */,
+				2182FD0C20B7F3BF72C55EDFF8283F92 /* TPKeyboardAvoidingTableView.h in Headers */,
+				D80C4E5BC7D8D2663D3212234CCE449A /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E55F63C25011878234388C1650BBBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FF5A041DFB2CCE8A8071CF8653D1F7 /* Pods-popoverExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E1A95B7819F54A862118998E5E85CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C395B797895075CCF4F8BF19A3D7CF69 /* BIZPopupView-umbrella.h in Headers */,
+				EFE019F24BEE09EF45124F100794A5B1 /* BIZPopupViewController.h in Headers */,
+				9997246FDD27CBF47A8A57C0DB278BF1 /* BIZPopupViewControllerDelegate.h in Headers */,
+				F4D5ECA0FF9B0016A0235E86FF35F1D0 /* UIViewController+BIZChildViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		734062D58D9D92E4055C27D4AF7456A9 /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A40E4D784A60E07C78622C639C658E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				A6D0CC6563694CC3D6E67F7642F030C1 /* Sources */,
+				111CB36E769B6D4027D7E8B5738A81C7 /* Frameworks */,
+				8B8BA7B91B4AE2C8D8FB079602ADF8D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 7132D350EAF6D21099878523C8C34C91 /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB7A21F983943E2708874238A397F51F /* Pods-popoverExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A18AA65F6D91B10F11419139E8C51F /* Build configuration list for PBXNativeTarget "Pods-popoverExample" */;
+			buildPhases = (
+				ED6E39F8CB655231ADBFC5799A2CABC2 /* Sources */,
+				92B3175F92F105E2D934704C396BDCAB /* Frameworks */,
+				B6E55F63C25011878234388C1650BBBD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D32C60652FE2EAF5C04FB2291A972D9 /* PBXTargetDependency */,
+				EF21F9DB047B6E8C394E1024A15FD07C /* PBXTargetDependency */,
+			);
+			name = "Pods-popoverExample";
+			productName = "Pods-popoverExample";
+			productReference = 6BDE8E3A90F72E4F7CF0356FC98A2549 /* Pods_popoverExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF835CCCA4C35BB313FE062403AFE6C3 /* BIZPopupView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A9D5AC3828C3BE34237C947A776DAEA /* Build configuration list for PBXNativeTarget "BIZPopupView" */;
+			buildPhases = (
+				8B6EBD82FD7F1BEC3171A89101B65FDE /* Sources */,
+				37E4110CDD1C122CCCD0F0C40F0A0554 /* Frameworks */,
+				F1E1A95B7819F54A862118998E5E85CD /* Headers */,
+				7A6190E7EDDCD31A117455534E05A147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F454D80D0B93FFDD5FDB7C11D962A1A8 /* PBXTargetDependency */,
+			);
+			name = BIZPopupView;
+			productName = BIZPopupView;
+			productReference = FCF7161AD3535DB8410D328CC60DD78C /* BIZPopupView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5012B7393101BAE2C1FCBDB8BA44B959 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF835CCCA4C35BB313FE062403AFE6C3 /* BIZPopupView */,
+				CB7A21F983943E2708874238A397F51F /* Pods-popoverExample */,
+				734062D58D9D92E4055C27D4AF7456A9 /* TPKeyboardAvoiding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A6190E7EDDCD31A117455534E05A147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA446768EABB8929E39EC8D78D8AF29 /* k-popup-dismiss-button@2x.png in Resources */,
+				DE35D058D80DC6587F044007B91A41BD /* k-popup-dismiss-button@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B6EBD82FD7F1BEC3171A89101B65FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE39A3204328FB3B88165686DED0B11 /* BIZPopupView-dummy.m in Sources */,
+				C79FF4C678589EDFC2DE17B1ADEF109B /* BIZPopupViewController.m in Sources */,
+				EA5E368D84DC3D6979F88B9FE2398968 /* UIViewController+BIZChildViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D0CC6563694CC3D6E67F7642F030C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EECEFA94D5A27A79F4121388107978 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				5AC033CDB87D8A68A8CA64CF2C5F936B /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				0E5654797F6A039A4E699683BFFD034D /* TPKeyboardAvoidingScrollView.m in Sources */,
+				B4C0B2E6986B1D5D53E85DF5BB114577 /* TPKeyboardAvoidingTableView.m in Sources */,
+				7BB85E5C6A7620DC7356B6B43EA6D821 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6E39F8CB655231ADBFC5799A2CABC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DDF7A72B0CFA66FBE08FA1FC6AB317 /* Pods-popoverExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D32C60652FE2EAF5C04FB2291A972D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BIZPopupView;
+			target = FF835CCCA4C35BB313FE062403AFE6C3 /* BIZPopupView */;
+			targetProxy = DB6A760C0956821DE4F7BCFF54355762 /* PBXContainerItemProxy */;
+		};
+		EF21F9DB047B6E8C394E1024A15FD07C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 734062D58D9D92E4055C27D4AF7456A9 /* TPKeyboardAvoiding */;
+			targetProxy = 20BE14B3F71865848E05E1427F1E8BF6 /* PBXContainerItemProxy */;
+		};
+		F454D80D0B93FFDD5FDB7C11D962A1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 734062D58D9D92E4055C27D4AF7456A9 /* TPKeyboardAvoiding */;
+			targetProxy = 9D323A715FA5503C04564541F348DE4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		007D92643581B1E72D0704102EBBB016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F480E685366AB50DFF829574A234648B /* Pods-popoverExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-popoverExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-popoverExample/Pods-popoverExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_popoverExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C82D3086DDE0622319C5B2D52E8DCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2323590C740BC9222569BFF824437BAF /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A624F13966E401736414A451F80EBE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCF2ACAA4684BFCB9DF950B29B4FB0A /* BIZPopupView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BIZPopupView/BIZPopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BIZPopupView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BIZPopupView/BIZPopupView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BIZPopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6F4665A1ADAAD6581D079D3C81161A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCF2ACAA4684BFCB9DF950B29B4FB0A /* BIZPopupView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BIZPopupView/BIZPopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BIZPopupView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BIZPopupView/BIZPopupView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BIZPopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1910974D9CF9E002BBD896E568879B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC27D255BC71615D97CF856B9060D805 /* Pods-popoverExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-popoverExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-popoverExample/Pods-popoverExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_popoverExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4437BB898E0E3C1834644F70D4E0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2323590C740BC9222569BFF824437BAF /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A18AA65F6D91B10F11419139E8C51F /* Build configuration list for PBXNativeTarget "Pods-popoverExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				007D92643581B1E72D0704102EBBB016 /* Debug */,
+				C1910974D9CF9E002BBD896E568879B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A9D5AC3828C3BE34237C947A776DAEA /* Build configuration list for PBXNativeTarget "BIZPopupView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A624F13966E401736414A451F80EBE2E /* Debug */,
+				A6F4665A1ADAAD6581D079D3C81161A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A40E4D784A60E07C78622C639C658E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4437BB898E0E3C1834644F70D4E0B6B /* Debug */,
+				0C82D3086DDE0622319C5B2D52E8DCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
