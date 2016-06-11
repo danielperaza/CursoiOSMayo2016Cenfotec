@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *exampleTextField;
 
 @end
 
@@ -23,5 +24,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.view endEditing:YES];
+    
+}
+
+
 
 @end
