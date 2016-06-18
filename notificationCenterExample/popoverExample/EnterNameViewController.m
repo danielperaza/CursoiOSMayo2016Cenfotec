@@ -27,7 +27,8 @@
 
 
 - (IBAction)done:(UIButton *)sender {
-    
+    NSDictionary *parameter = @{@"name":self.yourNameTextField.text};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"GET_NAME_NOTIFICATION" object:nil userInfo:parameter];
 }
 
 @end
