@@ -16,7 +16,7 @@
 
 
 +(NSArray*)loadCategories{
-    NSArray *categories = [NewsCategory MR_findAll];
+    NSArray *categories = [NewsCategory MR_findAllSortedBy:@"order" ascending:YES];
     if (categories.count==0) {
         [DataManager createCategories];
         return [DataManager loadCategories];

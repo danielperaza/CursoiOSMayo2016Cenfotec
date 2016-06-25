@@ -9,6 +9,8 @@
 #import "NewsCategoryTableViewController.h"
 #import "DataManager.h"
 #import "CategoryTableViewCell.h"
+#import "NewsTableViewController.h"
+#import "NewsCategory.h"
 
 
 @interface NewsCategoryTableViewController ()
@@ -54,6 +56,12 @@
     CategoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryTableViewCell"];
     [cell setupCellWithCategory:self.categoryArray[indexPath.row]];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NewsTableViewController *newsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsTableViewController"];
+    newsTableViewController.categorySelected =  self.categoryArray[indexPath.row];
+    [self.navigationController pushViewController:newsTableViewController animated:YES];
 }
 
 

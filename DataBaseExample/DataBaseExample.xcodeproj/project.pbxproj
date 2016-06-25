@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		7808A1BD1D1ED34900D241B9 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7808A1BC1D1ED34900D241B9 /* NewsTableViewController.m */; };
+		7808A1C21D1ED62200D241B9 /* NewsCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7808A1C01D1ED62200D241B9 /* NewsCustomTableViewCell.m */; };
+		7808A1C31D1ED62200D241B9 /* NewsCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7808A1C11D1ED62200D241B9 /* NewsCustomTableViewCell.xib */; };
+		7808A1C91D1EE78500D241B9 /* NewsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7808A1C81D1EE78500D241B9 /* NewsDetailTableViewController.m */; };
 		788E44C41D1592B0009D7D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E44C31D1592B0009D7D55 /* main.m */; };
 		788E44C71D1592B0009D7D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E44C61D1592B0009D7D55 /* AppDelegate.m */; };
 		788E44CD1D1592B0009D7D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788E44CB1D1592B0009D7D55 /* Main.storyboard */; };
@@ -41,6 +45,13 @@
 /* Begin PBXFileReference section */
 		5179FFF45E12998548CA42A5 /* Pods-DataBaseExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataBaseExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataBaseExample/Pods-DataBaseExample.release.xcconfig"; sourceTree = "<group>"; };
 		5FACB4309B4F277A5033912C /* libPods-DataBaseExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataBaseExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7808A1BB1D1ED34900D241B9 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		7808A1BC1D1ED34900D241B9 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		7808A1BF1D1ED62200D241B9 /* NewsCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCustomTableViewCell.h; sourceTree = "<group>"; };
+		7808A1C01D1ED62200D241B9 /* NewsCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCustomTableViewCell.m; sourceTree = "<group>"; };
+		7808A1C11D1ED62200D241B9 /* NewsCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCustomTableViewCell.xib; sourceTree = "<group>"; };
+		7808A1C71D1EE78500D241B9 /* NewsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailTableViewController.h; sourceTree = "<group>"; };
+		7808A1C81D1EE78500D241B9 /* NewsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailTableViewController.m; sourceTree = "<group>"; };
 		788E44BF1D1592B0009D7D55 /* DataBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788E44C31D1592B0009D7D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		788E44C51D1592B0009D7D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7808A1BE1D1ED60700D241B9 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				7808A1BF1D1ED62200D241B9 /* NewsCustomTableViewCell.h */,
+				7808A1C01D1ED62200D241B9 /* NewsCustomTableViewCell.m */,
+				7808A1C11D1ED62200D241B9 /* NewsCustomTableViewCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
 		788E44B61D1592AF009D7D55 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +167,9 @@
 		788E44DE1D159ECC009D7D55 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				7808A1BE1D1ED60700D241B9 /* CustomCell */,
+				7808A1BB1D1ED34900D241B9 /* NewsTableViewController.h */,
+				7808A1BC1D1ED34900D241B9 /* NewsTableViewController.m */,
 			);
 			name = NewsList;
 			sourceTree = "<group>";
@@ -153,6 +177,8 @@
 		788E44DF1D159ED2009D7D55 /* NewsDetail */ = {
 			isa = PBXGroup;
 			children = (
+				7808A1C71D1EE78500D241B9 /* NewsDetailTableViewController.h */,
+				7808A1C81D1EE78500D241B9 /* NewsDetailTableViewController.m */,
 			);
 			name = NewsDetail;
 			sourceTree = "<group>";
@@ -291,6 +317,7 @@
 			files = (
 				788E44D21D1592B0009D7D55 /* LaunchScreen.storyboard in Resources */,
 				788E44CF1D1592B0009D7D55 /* Assets.xcassets in Resources */,
+				7808A1C31D1ED62200D241B9 /* NewsCustomTableViewCell.xib in Resources */,
 				788E44CD1D1592B0009D7D55 /* Main.storyboard in Resources */,
 				788E45001D15BDB7009D7D55 /* CategoryTableViewCell.xib in Resources */,
 			);
@@ -365,13 +392,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				788E44F21D15AAA8009D7D55 /* _News.m in Sources */,
+				7808A1BD1D1ED34900D241B9 /* NewsTableViewController.m in Sources */,
 				788E44FF1D15BDB7009D7D55 /* CategoryTableViewCell.m in Sources */,
 				788E44C71D1592B0009D7D55 /* AppDelegate.m in Sources */,
 				788E44F61D15AD00009D7D55 /* NewsCategoryTableViewController.m in Sources */,
 				788E44C41D1592B0009D7D55 /* main.m in Sources */,
 				788E44ED1D15AA97009D7D55 /* NewsCategory.m in Sources */,
+				7808A1C21D1ED62200D241B9 /* NewsCustomTableViewCell.m in Sources */,
 				788E44EC1D15AA97009D7D55 /* News.m in Sources */,
 				788E44F31D15AAA8009D7D55 /* _NewsCategory.m in Sources */,
+				7808A1C91D1EE78500D241B9 /* NewsDetailTableViewController.m in Sources */,
 				788E44FA1D15AD38009D7D55 /* DataManager.m in Sources */,
 				788E44DB1D1599E0009D7D55 /* Model.xcdatamodeld in Sources */,
 			);
@@ -547,6 +577,7 @@
 				788E44E41D159FDF009D7D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

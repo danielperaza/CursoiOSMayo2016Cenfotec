@@ -1,4 +1,6 @@
 #import "News.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "NewsCategory.h"
 
 @interface News ()
 
@@ -8,6 +10,13 @@
 
 @implementation News
 
-// Custom logic goes here.
++(id)initWithTitle:(NSString*)title description:(NSString*)description category:(NewsCategory*)category{
+    News *news = [News MR_createEntity];
+    news.createdAt = [NSDate date];
+    news.titleNews = title;
+    news.contentNews = description;
+    news.category = category;
+    return news;
+}
 
 @end

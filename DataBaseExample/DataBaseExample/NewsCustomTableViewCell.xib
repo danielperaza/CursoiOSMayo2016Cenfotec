@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="NewsCustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nDQ-BC-96f">
+                        <rect key="frame" x="15" y="15" width="224" height="24.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0cB-IZ-ngV">
+                        <rect key="frame" x="259" y="15" width="46" height="24.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nDQ-BC-96f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ADh-4K-GJP"/>
+                    <constraint firstAttribute="bottom" secondItem="0cB-IZ-ngV" secondAttribute="bottom" constant="15" id="Ocg-bm-aLx"/>
+                    <constraint firstItem="0cB-IZ-ngV" firstAttribute="leading" secondItem="nDQ-BC-96f" secondAttribute="trailing" constant="20" id="Qwu-NN-6aF"/>
+                    <constraint firstItem="nDQ-BC-96f" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.7" id="ZfK-3M-ZqE"/>
+                    <constraint firstItem="nDQ-BC-96f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="aS1-RJ-qOS"/>
+                    <constraint firstAttribute="trailing" secondItem="0cB-IZ-ngV" secondAttribute="trailing" constant="15" id="ilS-kp-0Pu"/>
+                    <constraint firstAttribute="bottom" secondItem="nDQ-BC-96f" secondAttribute="bottom" constant="15" id="oUD-Ql-562"/>
+                    <constraint firstItem="0cB-IZ-ngV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="t9n-Fu-z2G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="0cB-IZ-ngV" id="8uG-PU-g4i"/>
+                <outlet property="titleLabel" destination="nDQ-BC-96f" id="T1D-Za-qbH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
